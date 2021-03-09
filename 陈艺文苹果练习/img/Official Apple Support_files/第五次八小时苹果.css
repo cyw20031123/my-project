@@ -1,0 +1,618 @@
+
+.xian {
+    border-bottom: 1px solid #dedede;
+}
+
+.diLan {
+    box-sizing: border-box;
+    padding: 0 22px;
+    width: 100%;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shiPing {
+    width: 980px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #dedede;
+}
+
+.shiPing p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.021;
+}
+
+.tu {
+    height: 32px;
+    padding-top: 15px;
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tu img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.bangZhu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.biao svg {
+    margin-right: 11px;
+} 
+
+.biao {
+    padding: 17px 0;
+    height: 24px;
+    width: 980px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.xuanZhe {
+    width: 980px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 25px;
+} 
+
+.xuan{
+    width: 25%;
+    overflow: hidden
+}
+
+.zheTou {
+    margin-bottom: 6px;
+    font-size: 12px;
+    line-height: 1.27273;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.jiaHao {
+    display: none;
+    transition: transform 0.2s;
+}
+
+.zhe {
+    font-size: 12px;
+    font-weight: 400;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.zhe >* {
+    cursor: pointer;
+    display: inline-block;
+    height: 21px;
+    line-height: 21px;
+    color: #555;
+    width: fit-content;
+}
+
+.zhe li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.shangBiao {
+    width: 980px;
+    padding: 6px 0 24px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12.8px;
+    border-top: 1px solid #dedede;
+}
+
+.qian {
+    display: flex;
+    flex-direction: row;
+}
+
+.qian div div:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.qian div {
+    line-height: 20px;
+    display: flex;
+    flex-direction: row;
+    color: #555;
+}
+
+.biaoMa {
+    height: 20px;
+    line-height: 20px;
+    width: auto;
+    color: #888;
+    margin-right: 26px; 
+    text-decoration: none !important;
+    cursor: text !important;
+}
+
+.w {
+    color: #555; 
+    padding-right: 12px;
+    margin-right: 10px;
+    border-right: 1px solid #dedede;
+}
+
+.hou {
+    height: 20px;
+    line-height: 20px;
+    color: #555;
+}
+
+.hou:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1050px){
+    .biao {
+        width: 100%;
+    }
+
+    .xuanZhe {
+        width: 100%;
+    }
+
+    .shangBiao {
+        width: 100%;
+    }
+
+    .bangZhu {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .qian {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 766px){
+    .xuanZhe {
+        flex-direction: column;
+    }
+
+    .xuan {
+        width: 100%;
+        border-bottom: 1px solid #dedede;
+    }
+
+    .xuan:nth-child(1) {
+        border-top: 1px solid #dedede;
+    }
+
+    .shangBiao {
+        border-top: none;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .zhe {
+        width: 100%;
+        height: 0;
+        transition: height 0.2s ease-in;
+    }
+
+    .zhe >* {
+        height: 30px;
+        line-height: 30px;
+        width: 100%;
+        padding-left: 14px;
+        color: #888;
+    }
+
+    .zhe li:hover {
+        text-decoration: underline;
+    }
+
+    .zheTou {
+        font-weight: initial;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        height: 38px;
+        line-height: 38px;
+        width: 100%;
+        color: #888;
+    }
+
+    .jiaHao {
+        display: block;
+    }
+
+    .change .jiaHao {
+        transform:rotate(45deg);
+    }
+
+    .zheTou:hover .jiaHao {
+        color: black;
+    }
+
+    .change {
+        color: #000;
+        font-weight: 600;
+    }
+
+    .change + .zhe {
+        height: 210px;
+    }
+
+    .qian {
+        padding-top: 13px;
+    }
+
+    .hou {
+        color: #888;
+    }
+
+    .qian div {
+        color: #888;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fuWu {
+    width: 817px;
+    margin: 48px auto;
+}
+
+.fuWu h3 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+    padding-bottom: 13px;
+}
+
+.fuWu p {
+    width: fit-content;
+    color: #0070c9;
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.fuWu p:hover {
+    text-decoration: underline;
+}
+
+.fuWu div {
+    width: fit-content;
+    color: #0070c9;
+    font-size: 17px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.fuWu div:hover .wen {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:1050px){
+    .fuWu {
+        width: 692px;
+    }
+}
+
+@media only screen and (max-width: 766px){
+    .fuWu {
+        box-sizing: border-box;
+        padding: 0 30px;
+        width: 100%;
+    }
+}
+
+
+
+.zhaPian {
+    padding: 48px 0;
+    box-sizing: border-box;
+    width: 817px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.zhaPian img {
+    width: 240px;
+    height: 140px;
+}
+
+.pian {
+    padding-left: 50px;
+}
+
+.pian h3 {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+.pian div {
+    margin-top: 12px;
+    color: #0070c9;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.pian div:hover .wen {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:1050px){
+    .zhaPian {
+        width: 692px;
+        padding: 32px 0 48px;
+    }
+}
+
+@media only screen and (max-width:766px){
+    .zhaPian{
+        width: 100%;
+        padding: 32px 24px 48px;
+        flex-direction: column;
+    }
+
+    .zhaPian img {
+        margin: 0 auto;
+    }
+
+    .pian {
+        padding: 0  ;
+    }
+}
+
+
+
+.hua {
+    box-sizing: border-box;
+    width: 817px;
+    margin: 32px auto 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hua h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+}
+
+.hua p {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.5294717647;
+    font-weight: 400;
+}
+
+.hua span {
+    color: #0070c9;
+    cursor: pointer;
+}
+
+.hua span:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:1050px){
+    .hua {
+        width: 692px;
+    }
+}
+
+@media only screen and (max-width:766px){
+    .hua {
+        padding: 0 24px;
+        width: 100%;
+    }
+}
+
+
+
+.pinGuo {
+    box-sizing: border-box;
+    width: 817px;
+    margin: 42px auto ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pinGuo img {
+    width: 400px;
+    height: 200px;
+}
+
+
+.guo h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 32px;
+    margin: 0;
+}
+
+.guo p {
+    font-size: 17px;
+    line-height: 17px;
+    margin-top: 12px;
+}
+
+.guo div {
+    margin-top: 12px;
+    height: 26px;
+    line-height: 26px;
+    color: #0070c9;
+}
+
+.guo div:hover .wen {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:1050px){
+    .pinGuo {
+        width: 692px;
+    }
+
+    .pinGuo img {
+        width: 228px;
+        height: 114px;
+    }
+
+    .guo h3 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .guo p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:766px){
+    .pinGuo{
+        width: 100%;
+        padding: 0 34px;
+        flex-direction: column;
+    }
+
+    .pinGuo img {
+        margin: auto;
+    }
+
+    .guo h3{
+        font-size: 24px;
+        line-height: 24px;
+        width: fit-content;
+    }
+}
+
+
+
+
+
+.computer {
+    width: 100%;
+    height: 430px;
+    background: url(./img/背景2.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.nao {
+    width: 980px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.nao h3 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.nao span {
+    width: 300px;
+    font-size: 17px;
+    line-height: 17px;
+}
+
+.nao div {
+    width: 88px;
+    margin-top: 16px;
+    color: #6BF;
+    cursor: pointer;
+}
+
+.nao div:hover .wen {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:1050px){
+    .nao {
+        width: 692px;
+    }
+
+    .nao h3 {
+        font-size: 34px;
+    }
+
+    .computer {
+        height: 343px;
+    }
+}
+
+@media only screen and (max-width:766px){
+    .nao {
+        width: 100%;
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width:710px){
+    .computer {
+        background-image:url(https://support.apple.com/content/dam/edam/applecare/images/en_US/psp/psp-hero-banner-getsupport.image.small_2x.jpg);
+        height: 320px;
+        margin-bottom: 160px;
+    }
+    
+    .nao {
+        position: relative;
+        top: 240px;
+        color: black;
+    }
+
+    .nao h3 {
+        font-size: 28px;
+    }
+}
