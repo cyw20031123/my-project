@@ -1,0 +1,572 @@
+
+
+/* 去掉边距 */
+body {
+    margin: 0;
+}
+
+/* 所有的超链接 */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* 导航栏 */
+.head {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* 左边的排版 */
+.zuo {
+    padding-left: 24px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* 左边里元素的边距 */
+.zuo>* {
+    margin-right: 31px;
+    margin-top: 19px;
+    font: 13px/23px Arial,sans-serif;
+}
+
+/* 鼠标滑过响应 */
+.zuo a:hover {
+    color: blue;
+}
+
+/* 更多里的排版 */
+
+.nei {
+    width: 304px;
+    height: 223px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: -12px;
+    top: 10px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.15);
+}
+
+/* 上面四个 */
+.shang {
+    display: flex;
+    flex-direction: row;
+    padding-top: 16px;
+}
+
+/* 下面四个 */
+.xia {
+    display: flex;
+    flex-direction: row;
+    padding-top: 19px;
+}
+
+/* 每一个选项的设置 */
+.duo {
+    width: 76px;
+    height: 70px;
+    font: 13px/23px Arial,sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+/* 更多的图片 */
+.duo img {
+    width: 42px;
+    height: 42px;
+}
+
+/* 里面的文字 */
+.duo p {
+    margin: 0;
+    padding-top: 4px;
+    height: 25.6px;
+}
+
+/* 全部百度产品 */
+.quanBu {
+    color: #9195a3;
+    font: 13px/23px Arial,sans-serif;
+    margin-top: 10px;
+    
+}
+
+/* 全部百度产品的响应 */
+.quanBu:hover {
+    cursor:pointer;
+    color: blue;
+}
+
+/* 将里面的内容藏起来 */
+.duoChang{
+    padding-bottom: 19px;
+    position: relative;
+    display: none;
+}
+
+/* 当更多被聚焦，里面的内容就出现 */
+.gengDuo:hover .duoChang {
+    display: block;
+}
+
+.gengDuo:hover a {
+    color: blue;
+}
+
+/* 单个选项的响应 */
+.duo:hover {
+    color: blue;
+}
+
+/* 右边栏 */
+.you {
+    font: 13px/23px Arial,sans-serif;
+    display: flex;
+    flex-direction: row;
+    padding-right: 24px;
+}
+
+/* 设置的选项排版 */
+.tao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: -29px;
+    top: 5px;
+    width: 84px;
+    height: auto;
+    border-radius:10px;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.15);
+    background-color: white;
+    padding: 6px 0;
+}
+
+/* 将设置的选项藏起来 */
+.xuanXiang {
+    position: relative;
+    display: none;
+}
+
+/* 隐藏选项的高设置 */
+.tao a {
+    padding: 3px 0 3px 0;
+}
+
+/* 聚焦变色 */
+.tao a:hover {
+    color: blue;
+}
+
+/* 当设置被聚焦，隐藏选项出现 */
+.sheZhi:hover .xuanXiang {
+    display: block;
+}
+
+/* 设置的排版 */
+.sheZhi {
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-end;
+}
+
+/* 设置两个字的排版 */
+.anLiu {
+    margin-top: 19px;
+    width: 26px;
+}
+
+/* 聚焦变色 */
+.anLiu:hover{
+    color: blue;
+    cursor:pointer;
+}
+
+/* 设置登录键 */
+.dengLu {
+    line-height: 24px;
+    margin-top: 18px;
+    margin-left: 32px;
+    width: 48px;
+    height: 24px;
+    text-align: center;
+    background-color: #4e71f2;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+/* 设置身体 */
+
+.body {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+/* 设置log */
+.logs {
+    height: 188.396px;
+    width: 654px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.log {
+    width: 270px;
+    height: 128px;
+    position: absolute;
+    bottom: 15px;
+    cursor: pointer;
+}
+
+
+/* 搜索设置 */
+.shouSuo {
+    width: 654px;
+    height: 44px;
+    position:relative;
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* 设置输入框 */
+
+.shuRu {
+    width: 480px;
+    height: 16px;
+    padding: 12px 48px 12px 16px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 2px solid #c4c7ce;
+    outline: none;
+    border-right: none;
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 输入框聚焦变色 */
+.shuRu:hover {
+    border-color: #a7aab5;
+}
+
+/* 输入框点击变色 */
+.shuRu:focus {
+    border-color: #4e6ef2;
+}
+
+/* 百度一下按钮 */
+.baiDuYiXia {
+    height: 44px;
+    width: 108px;
+    padding: 0;
+    background-color: #4e6ef2;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 17px;
+    border: #4e6ef2;
+    color: white;
+    outline: none;
+    line-height: 44px;
+}
+
+/* 百度一下聚焦变色 */
+.baiDuYiXia:hover {
+    background-color: #4662d9;
+    cursor: pointer;
+}
+
+/* 拍照搜索小图标 */
+.tuPian {
+    background: #fff url(./img/拍照图标.png) no-repeat;
+    width: 24px;
+    height: 20px;
+    background-position: 0 -51px;
+    position: absolute;
+    right: 124px;
+    top: 13px;
+    z-index: 1;
+}
+
+/* 拍照小图标聚焦换位 */
+.tuPian:hover {
+    background-position: 0 -75px;
+}
+
+/* 百度热榜换一换排列 */
+.biaoTou {
+    width: 654px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+/* 百度热榜设置 */
+.baiDuReShou {
+    font: 14px/24px Arial,sans-serif;
+}
+
+/* 换一换设置 */
+.huanYiHuan {
+    color: #9195a3;
+    font: 13px/23px Arial,sans-serif;
+    cursor: pointer;
+    position: relative;
+}
+
+/* 旋转标签 */
+.icon {
+    position: absolute;
+    top: 3px;
+    left: -20px;
+    fill: #9195a3;
+}   
+
+.huanYiHuan:hover >*{
+    color:blue;
+    fill: blue;
+}
+
+/* 热点新闻 */
+.xinWen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 654px;
+    margin-top: 4px;
+}
+
+/* 两边的热点 */
+.reDian {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 里面的三个热点 */
+.reDian a {
+    width: 268px;
+    height: 32px;
+    font: 14px/24px Arial,sans-serif;
+    line-height: 32px;
+}
+
+/* 聚焦变色 */
+.reDian a:hover{
+    color:blue;
+}
+
+/* 排列数 */
+.pai {
+    font-size: 15px;
+    margin-right: 12px;
+    color: #9195a3;
+    position: relative;
+}
+
+/* 最热、新、沸、爆 */
+.bao, .re, .xin, .fei {
+    background-color: #d61a6e; 
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 1.5px 2px;
+    position: relative;
+    left: 8.3px;
+    bottom: 1.5px;
+    font-weight: 200;
+}
+
+.re {
+    background-color: #ff9812; 
+}
+
+.xin {
+    background-color: #ff455b; 
+}
+
+.fei {
+    background-color: #ff7413; 
+}
+
+
+
+/* 二维码 */
+.erWeiMa {
+    position: fixed;
+    bottom: 66px;
+    right: 26px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+/* 外面的小图标 */
+.ma {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 背景图片 */
+.ma div {
+    background: #fff url(./img/二维码1.png);
+    background-size:24px 24px;  
+    width: 24px;
+    height: 24px;
+}
+
+/* 聚焦背景图片切换 */
+.erWeiMa:hover .ma div {
+    background: url(./img/二维码2.png);
+    background-size:24px 24px;
+}
+
+/* 聚焦加阴影 */
+.erWeiMa:hover .ma{
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.096);
+}
+
+/* 连接里面东西的桥梁 */
+.jie {
+    padding-left: 12px;
+}
+
+/* 外面小图标聚焦后出现的内容 */
+.liBao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.116);
+    border-radius: 10px;
+    height: 110px;
+    width: 300px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: white;
+}
+
+/* 里面的东西藏起来 */
+.chang {
+    position: relative;
+    display: none;
+}
+
+/* 聚焦后出现 */
+.erWeiMa:hover .chang {
+    display: block;
+}
+
+/* 里面的两段文字 */
+.bao-zi {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 上面的一段 */
+.bao-zi div {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+/* 小扫一扫 */
+.erWei {
+    position: relative;
+    top: 5px;
+}
+
+/* 里面的二维码 */
+.liBao img {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/* 脚标排版 */
+footer {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    bottom:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-family: "PingFang SC",Arial,"Microsoft YaHei",sans-serif;
+    background-color: #fbfbfb;
+}
+/* 两边的边距 */
+.tou {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 24px;
+}
+
+/* 左边的各种帮助 */
+.tou >* {
+    line-height: 40px;  
+    margin-right: 20px;
+    color: #9195a3;
+}
+
+.jiang {
+    color: #9195a3;;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+/* 聚焦变色 */
+.tou >*:hover {
+    color: black;
+}
+
+/* 右边的各种标识 */
+.wei {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 24px;
+}
+
+.wei >* {
+    line-height: 40px;  
+    margin-left: 20px;
+    color: #bbb;
+}
+
+/* 京公网聚焦 */
+.wei a:hover {
+    color: black;
+}
+
+
