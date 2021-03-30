@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>改变大小</title>
+        <link rel="stylesheet" href="./字体.css">
+    </head> 
+    
+    <body>
+        <p>拖动栏以更改其长宽</p> 
+        <div style="background: orange; width: 60px; height: 20px"> 
+        </div>
+
+        <script>
+           let lastX; 
+           let lastY;
+           let bar = document.querySelector("div"); 
+           function moved(event) { 
+                if (event.buttons == 0) { 
+                    window.removeEventListener ("mousemove", moved); 
+                    } 
+                else { 
+                    let dist = event.clientY - lastY;
+                    let dits = event.clientX - lastX;
+                    let newWidth = Math.max(10, bar.offsetHeight + dist);
+                    bar.style.width =  bar.offsetWidth + dits+"px";
+                    bar.style.height = newWidth + "px"; 
+                    lastX = event.clientX; 
+                    lastY = event.clientY;
+                    } 
+                }
+           bar.addEventListener("mousedown", event => {
+                if (event.button == 0) { 
+                    lastY = event.clientY;
+                    lastX = event.clientX;
+                    window.addEventListener("mousemove", moved); 
+                    event.preventDefault();
+                    }
+                });
+        </script>
+    </body>
+</html>

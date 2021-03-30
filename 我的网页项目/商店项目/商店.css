@@ -1,0 +1,90 @@
+
+body{
+    margin: 0;
+}
+
+/* 导航栏css设置 */
+.navigation-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    width: 100px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgb(66, 56, 56);
+    color: white;
+    font-style: italic;
+}
+
+.Navigation {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: calc(100% - 100px);
+    background-color: aquamarine;
+}
+
+.homepage {
+    line-height: 40px;
+    padding: 0 20px;
+    color: rgb(184, 181, 178);
+    text-decoration: none;
+}
+
+.homepage:hover {
+    color: antiquewhite;
+}
+
+/* 店铺css排版 */
+
+.shop {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.commodity {
+    width: 100px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.commodity img {
+    width: 100px;
+    height: 100px;
+}
+
+.commodity div {
+    text-align: center;
+}
+
+/* 购物界面排版 */
+
+.settlement {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    background-color: #1baae2;
+    height: 200px;
+}
+
+.Shopping-list {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.function {
+
+}

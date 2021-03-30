@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>气球</title>
+        <link rel="stylesheet" href="./字体.css">
+    </head>
+    
+    <body>
+        <p style="font-size: 100%; text-align: center;" id="qiqiu">🎈</p>
+        <div id="ti" style="position:fixed;top: 0;">按上下键改变气球大小</div>
+        <script>
+            let da = 100;
+            let qiu = document.getElementById("qiqiu");
+            let ti = document.getElementById("ti");
+            function bian(){
+                if(event.key == "ArrowUp"){
+                    da += 10;
+                    qiu.style.fontSize=(da+"%");
+                }
+                if(event.key == "ArrowDown"){
+                    da -= 10;
+                    qiu.style.fontSize=(da+"%");
+                }
+
+                if(da > 800) {
+                    ti.innerHTML = "小心！要炸了！"
+                }
+
+                if(da < 800) {
+                    ti.innerHTML = "按上下键改变气球大小"
+                    
+                }
+
+                if(da > 1000){
+                    ti.innerHTML = "哦吼"
+                    qiu.innerText="💥";
+                    window.removeEventListener("keydown",bian);
+                }
+            }
+            window.addEventListener("keydown",bian);
+            
+        </script>
+    </body>
+</html>

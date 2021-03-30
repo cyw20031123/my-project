@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>画点</title>
+        <link rel="stylesheet" href="./字体.css">
+        <style>
+            .trail {
+                position: absolute;
+                height: 6px;
+                width: 6px; 
+                border-radius: 3px; 
+                background: teal; 
+            }
+
+            body {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            button {
+                width: 80px;
+                height: 40px;
+            }
+
+            .kai {
+                font-size: 38px;
+                z-index: -2;
+            }
+
+            .zhe {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: -1;
+            }
+        </style>
+        
+    </head> 
+    
+    <body>
+        <button onclick="qing()">清屏</button>
+        <div class="kai">按下鼠标开始画画</div>
+        <div class="zhe"></div>
+        <script>
+
+            function qing(params) {
+                let i = document.querySelectorAll(".trail");
+                for (const a of i) {
+                    a.remove();
+                }
+            }
+            function huadian(){
+                let dian = document.createElement("div");
+                dian.className = "trail";
+                dian.style.left = (event.pageX - 3) + "px";
+                dian.style.top = (event.pageY - 3) + "px";
+                document.body.appendChild(dian);
+            }
+            document.addEventListener("mousedown",()=>{
+                document.addEventListener("mousemove",huadian);
+            });
+            document.addEventListener("mouseup",()=>{
+                document.removeEventListener("mousemove",huadian);
+            })
+        </script>
+    </body>
+    

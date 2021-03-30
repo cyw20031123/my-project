@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.year {
+    width: fit-content;
+    margin-bottom: 30px;
+    font-size: 38px;
+    color: red;
+}
+
+.svg {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    display: none;
+    position: absolute;
+}
+
+
+@keyframes bian {
+    0%{width:120px;height:120px;}
+    25%{width:200px;height:200px}
+    50%{width:200px;height:200px}
+    75%{width:120px;height:120px}
+    100%{width:120px;height:120px}
+}
+
+.svg1 {
+    animation-name: bian;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+    left: -15px;
+    cursor: pointer;
+}
+
+@keyframes bian2 {
+    0%{top: 40px;}
+    50%{top: 30px;}
+    100%{top: 40px;}
+}
+.dian {
+    color: red;
+    display: none;
+    position: relative;
+    top: 40px;
+    left: -13px;
+    animation-name: bian2;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
